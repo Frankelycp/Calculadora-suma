@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerFormulario", "PrimerFormulario\PrimerFormulario.csproj", "{18CBC76F-7A28-487E-A249-A56980C1D6D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora Suma", "PrimerFormulario\Calculadora Suma.csproj", "{18CBC76F-7A28-487E-A249-A56980C1D6D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
