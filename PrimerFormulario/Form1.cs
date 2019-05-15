@@ -12,29 +12,34 @@ namespace PrimerFormulario
 {
     public partial class Form1 : Form
     {
-        private string valorCalculado;
+        private int valorCalculado;
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void Form1_load(object sender, EventArgs e)
 
-        private void button1_Click(object sender, EventArgs e)
         {
-            valorCalculado = this.txtdos.Text  + this.txtuno.Text;
+        }
+
+
+        private void Calcular_Click(object sender, EventArgs e)
+        {
+            valorCalculado = SumarNumeros();
             MessageBox.Show($"La suma es : { valorCalculado}");
 
-    }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        }
+        #region metodos
+        private int SumarNumeros()
         {
+            int valorAuxiliar = 0;
+            valorAuxiliar = Convert.ToInt32(this.txt1.Text) + Convert.ToInt32(this.txt2.Text);
+            return valorAuxiliar;
+        }
+            #endregion
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+
