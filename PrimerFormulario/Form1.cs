@@ -27,15 +27,15 @@ namespace PrimerFormulario
 
         private void Calcular_Click(object sender, EventArgs e)
         {
-            valorCalculado = SumarNumeros();
+            valorCalculado = SumarNumeros(Convert.ToInt32(this.txt1.Text), Convert.ToInt32(this.txt2.Text));
             MessageBox.Show($"La suma es : { valorCalculado}");
 
         }
         #region metodos
-        private int SumarNumeros()
+        private int SumarNumeros(int num1, int num2)
         {
             int valorAuxiliar = 0;
-            valorAuxiliar = Convert.ToInt32(this.txt1.Text) + Convert.ToInt32(this.txt2.Text);
+            valorAuxiliar = num1 + num2;
             return valorAuxiliar;
         }
             #endregion
